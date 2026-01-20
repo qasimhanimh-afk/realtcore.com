@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RealtCore Luxury Real Estate</title>
+  
+  <!-- Link to AOS library for animations -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background: #f5f5f5; }
+    header { position: relative; text-align: center; color: white; }
+    header img { width: 100%; max-height: 600px; object-fit: cover; }
+    header h1 {
+      position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+      font-size: 3rem; text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+    }
+    section { padding: 50px 20px; text-align: center; }
+    section img { width: 80%; max-width: 600px; margin: 20px 0; border-radius: 10px; }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <header>
+    <img src="images/hero.png" alt="Hero Image">
+    <h1 data-aos="fade-down">Luxury Real Estate</h1>
+  </header>
+
+  <!-- Properties Section -->
+  <section>
+    <h2 data-aos="fade-up">Our Properties</h2>
+    <img src="images/property1.png" alt="Property 1" data-aos="fade-right">
+    <img src="images/property2.png" alt="Property 2" data-aos="fade-left">
+  </section>
+
+  <!-- Contact Section -->
+  <section>
+    <h2 data-aos="fade-up">Contact Us</h2>
+    <p data-aos="fade-up">Email: info@realtcore.com | Phone: +1 234 567 890</p>
+  </section>
+
+  <!-- AOS Animation Script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+  </script>
+</body>
+</html>
